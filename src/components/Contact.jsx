@@ -1,39 +1,40 @@
-import { useState } from 'react';
-import axios from 'axios';
+import React from 'react'
+// import { useState } from 'react';
+// import axios from 'axios';
 import './Contact.css'
 
 import Girl from '../assets/bf-footer.png'
 
 function Contact() {
 
-    const [name, setName] = useState('');
-    const [mobile, setMobile] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    // const [name, setName] = useState('');
+    // const [mobile, setMobile] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
 
-    const handleSubmit = () => {
-        if (name.length === 0) {
-            alert("Veuillez remplir votre nom complet");
-        }
-        else if (mobile.length === 0) {
-            alert("Veuillez remplir votre numéro mobile");
-        }
-        else if (email.length === 0) {
-            alert("Veuillez remplir votre email");
-        }
-        else if (message.length === 0) {
-            alert("Veuillez remplir votre message");
-        }
-        else {
-            const url = 'http://localhost/Portfolio/portfolio_n_alice/formsubmit.php';
-            let fData = new FormData();
-            fData.append('name', name);
-            fData.append('mobile', mobile);
-            fData.append('email', email);
-            fData.append('message', message);
-            axios.post(url, fData).then(response => alert(response.data)).catch(error => alert(error));
-        }
-    }
+    // const handleSubmit = () => {
+    //     if (name.length === 0) {
+    //         alert("Veuillez remplir votre nom complet");
+    //     }
+    //     else if (mobile.length === 0) {
+    //         alert("Veuillez remplir votre numéro mobile");
+    //     }
+    //     else if (email.length === 0) {
+    //         alert("Veuillez remplir votre email");
+    //     }
+    //     else if (message.length === 0) {
+    //         alert("Veuillez remplir votre message");
+    //     }
+    //     else {
+    //         const url = 'http://localhost/Portfolio/portfolio_n_alice/formsubmit.php';
+    //         let fData = new FormData();
+    //         fData.append('name', name);
+    //         fData.append('mobile', mobile);
+    //         fData.append('email', email);
+    //         fData.append('message', message);
+    //         axios.post(url, fData).then(response => alert(response.data)).catch(error => alert(error));
+    //     }
+    // }
 
 
 
@@ -68,24 +69,24 @@ function Contact() {
                 <form className='formApp'>
                     <div className="form-outline mb-4 tab-info">
                         <label className="form-label" for="name">Nom</label>
-                        <input type="text" className="form-control form-control-lg" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                        <input type="text" className="form-control form-control-lg" />
                     </div>
                     <div className="form-outline mb-4 tab-info">
                         <label className="form-label" for="mobile">Mobile</label>
-                        <input type="text" className="form-control form-control-lg" name="mobile" id="mobile" value={mobile} onChange={(e) => setMobile(e.target.value)} />
+                        <input type="text" className="form-control form-control-lg" />
                     </div>
                     <div className="form-outline mb-4 tab-info">
                         <label className="form-label" for="email">Email</label>
-                        <input type="email" className="form-control form-control-lg" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" className="form-control form-control-lg" />
                     </div>
                     <div className="form-outline mb-4 tab-info">
                         <label className="form-label" for="message">Message</label>
-                        <input type="text-area" className="form-control form-control-lg" name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
+                        <input type="text-area" className="form-control form-control-lg" />
                     </div>
 
-                    <div className="d-flex justify-content-center">
-                        <input type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact" name="submit" id="submit" value="Envoyer" onClick={handleSubmit} />
-                    </div>
+                    {/* <div className="d-flex justify-content-center">
+                        <input type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact" />
+                    </div> */}
 
                 </form>
 
