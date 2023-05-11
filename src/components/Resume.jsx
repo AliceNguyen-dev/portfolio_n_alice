@@ -7,7 +7,7 @@ import Icon8 from "../assets/ic08.png";
 
 function Resume() {
     const mainDiv = {
-        width: "300px",
+        width: "240px",
         margin: "50px auto"
     };
     return (
