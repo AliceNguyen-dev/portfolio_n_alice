@@ -16,6 +16,7 @@ import IconsLo from "./assets/iconsLo.png";
 import IconsE from "./assets/iconsE.png";
 import IconsT from "./assets/iconsT.png";
 
+// import "./Responsive.scss"
 
 import { Routes, Route } from "react-router-dom";
 
