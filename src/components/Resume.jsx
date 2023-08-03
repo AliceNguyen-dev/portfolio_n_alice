@@ -4,6 +4,7 @@ import './Resume.css'
 
 import Icon7 from "../assets/ic07.png";
 import Icon8 from "../assets/ic08.png";
+// import './Responsive.scss'
 
 function Resume() {
     const mainDiv = {

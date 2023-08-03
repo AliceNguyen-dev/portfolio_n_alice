@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Home.css'
+// import './Responsive.scss'
 
 import Beeflex from "../assets/beeflex.jpg";
 import Take from "../assets/take.jpg";

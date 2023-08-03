@@ -11,7 +11,7 @@ import {
 
 
 import './Portfolio.css';
-
+// import './Responsive.scss'
 
 
 import uneSecond from "../assets/1secdumondemoderne.png";
